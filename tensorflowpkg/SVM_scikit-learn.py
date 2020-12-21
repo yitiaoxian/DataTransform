@@ -11,7 +11,7 @@ from sklearn import svm
 
 def SVM():
     '''data1——线性分类'''
-    data1 = spio.loadmat('data1.mat')
+    data1 = spio.loadmat('../data/data1.mat')
     X = data1['X']
     y = data1['y']
     y = np.ravel(y)
@@ -20,7 +20,7 @@ def SVM():
     model = svm.SVC(C=1.0,kernel='linear').fit(X,y) # 指定核函数为线性核函数
     plot_decisionBoundary(X, y, model)  # 画决策边界
     '''data2——非线性分类'''
-    data2 = spio.loadmat('data2.mat')
+    data2 = spio.loadmat('../data/data2.mat')
     X = data2['X']
     y = data2['y']
     y = np.ravel(y)
@@ -63,6 +63,5 @@ def plot_decisionBoundary(X,y,model,class_='linear'):
 
         plt.contour(X1, X2, vals, [0, 1], color='blue')
         plt.show()
-
 
 SVM()
