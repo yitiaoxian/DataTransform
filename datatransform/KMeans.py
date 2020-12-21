@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 from itertools import cycle ##python自带的迭代器模块
 
 
-##产生随机数据的中心
+##产生随机数据的中心 K=3
 centers = [[1,1],[-1,-1],[1,-1]]
 
 #产生的数据个数
