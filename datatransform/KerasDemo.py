@@ -48,8 +48,6 @@ def selectOpreation():
 def transformData():
     print('connect s2')
 
-def transactionControl():
-    connection = psy.connect(**PG_SQL_LOCAL)
 
 
 selectOpreation()
