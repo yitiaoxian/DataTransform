@@ -8,18 +8,9 @@
 import pandas as pd
 import numpy as np
 
-def dataClean():
-    csv_data = pd.read_csv('../data2/labels_train.csv','gbk')
-    colsName = csv_data.columns
-    print(colsName)
-    print(csv_data)
+df = pd.DataFrame(pd.read_csv('F://58_2//labels_train2.csv'))
 
-def dataSingle():
-    #处理单行数据
-    print('单行处理')
-
-def dataMulti():
-    #处理多行数据
-    print('多行处理')
-
-dataClean()
+#print(df.shape)
+#print(df.info())
+#print(df.dtypes)
+print(df.iloc[:2])
